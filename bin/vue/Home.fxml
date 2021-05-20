@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="hboxHome" alignment="CENTER" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.homeController">
+   <children>
+      <GridPane minHeight="500.0" minWidth="400.0" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #d9dee1;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.6000244140625" minWidth="10.0" prefWidth="13.000015068054196" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.6000244140625" minWidth="10.0" prefWidth="288.1999849319458" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.59999999999997" minWidth="10.0" prefWidth="298.3999877929687" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="210.60000915527343" minHeight="10.0" prefHeight="125.19999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="210.60000915527343" minHeight="10.0" prefHeight="27.800012207031244" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="483.19999618530267" minHeight="10.0" prefHeight="113.39997558593748" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="483.19999618530267" minHeight="0.0" prefHeight="23.00001220703126" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="335.4" minHeight="10.0" prefHeight="139.20004882812498" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="312.8000244140625" minHeight="10.0" prefHeight="103.99995117187501" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="2">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b9c1c9" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff591f" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff5f" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Text layoutX="25.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+               </children>
+            </VBox>
+            <Line endX="255.2928924560547" endY="1.5989539623260498" startX="-100.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <Line endX="258.492919921875" endY="0.8000160455703735" startX="-100.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <Line endX="307.29290771484375" endY="1.3929115533828735" layoutX="131.0" layoutY="344.0" startX="657.7858276367188" startY="1.3929153680801392" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <VBox alignment="BOTTOM_RIGHT" layoutX="261.0" layoutY="10.0" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b9c2c9" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff491f" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff39" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Text layoutX="25.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" layoutX="10.0" layoutY="10.0" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b5bdc4" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff4f21" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#2cff1f" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Text layoutX="25.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <VBox alignment="CENTER" minHeight="250.0" minWidth="250.0" prefHeight="600.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #d9d5cb;">
+         <children>
+            <Group fx:id="nvlCommande" onMouseClicked="#nouvelle_Commande" onMouseEntered="#Changer_Color" onMouseExited="#Retour_Color">
+               <children>
+                  <Rectangle fx:id="rectnvlCommande" arcHeight="10.0" arcWidth="10.0" fill="#ffab1f" height="37.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+                  <Text layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle Commande" />
+               </children>
+            </Group>
+            <Group layoutX="197.0" layoutY="292.0">
+               <children>
+                  <Rectangle arcHeight="10.0" arcWidth="10.0" fill="DODGERBLUE" height="37.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+                  <Text layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chercher Commande" />
+               </children>
+            </Group>
+            <Group layoutX="197.0" layoutY="272.0">
+               <children>
+                  <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#33ff1f" height="37.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+                  <Text layoutX="72.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chercher Client" />
+               </children>
+            </Group>
+         </children>
+      </VBox>
+   </children>
+</HBox>
