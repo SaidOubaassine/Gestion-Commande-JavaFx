@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 
 public class commande {
+	private int idCommande;
   private String nomProduit;
   private float quntite;
   private float prixUnit;
@@ -11,14 +12,26 @@ public class commande {
   private Date dateCommande;
   private int idClient;
   private String status;
-  private Date date;
+
+
   
-public Date getDate() {
-	return date;
+
+public commande(int idCommande, String nomProduit, Date dateCommande, float prixUnit,  String status,
+		float quantite, int idClient) {
+	super();
+	this.idCommande = idCommande;
+	this.nomProduit = nomProduit;
+	this.quntite = quantite;
+	this.prixUnit = prixUnit;
+	this.dateCommande = dateCommande;
+	this.idClient = idClient;
+	this.status = status;
 }
-public void setDate(Date date) {
-	this.date = date;
+
+public commande() {
+	
 }
+
 public float getPrixUnit() {
 	return prixUnit;
 }

@@ -30,40 +30,37 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.commande;
 
-public class homeController implements Initializable{
-	@FXML private Group nvlCommande;
-	@FXML private Rectangle rectnvlCommande;
-	@FXML private HBox hboxHome;
+public class controller_Chercher_commande implements Initializable{
+
 	@FXML private Pane pane1;
 	@FXML private Pane pane2;
 	@FXML private Pane pane3;
 	int idc1=0,idc2=0,idc3=0;
 	
-	@FXML
-	public void nouvelle_Commande(ActionEvent event) throws IOException{
-		Node node=(Node) event.getSource();
-		Stage stage=(Stage) node.getScene().getWindow();
-		stage.close();
-		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Nouvelle_Commande.fxml")));
-		stage.setScene(scene);
-		stage.show();
-	} 
 	
 	@FXML
-	public void Chercher_Commande(ActionEvent event) throws IOException{
+	public void Retour(MouseEvent event) throws IOException{
 		Node node=(Node) event.getSource();
 		Stage stage=(Stage) node.getScene().getWindow();
 		stage.close();
-		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Chercher_Commande.fxml")));
+		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Home.fxml")));
 		stage.setScene(scene);
 		stage.show();
 	} 
 	@FXML
-	public void Chercher_Client(ActionEvent event) throws IOException{
+	public void Chercher1(ActionEvent event) throws IOException{
 		Node node=(Node) event.getSource();
 		Stage stage=(Stage) node.getScene().getWindow();
 		stage.close();
-		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Chercher_Client.fxml")));
+		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Chercher1.fxml")));
+		stage.setScene(scene);
+		stage.show();
+	} 
+	public void Chercher2(ActionEvent event) throws IOException{
+		Node node=(Node) event.getSource();
+		Stage stage=(Stage) node.getScene().getWindow();
+		stage.close();
+		Scene scene =new Scene(FXMLLoader.load(getClass().getResource("/vue/Chercher2.fxml")));
 		stage.setScene(scene);
 		stage.show();
 	} 

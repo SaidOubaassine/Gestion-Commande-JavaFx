@@ -50,6 +50,30 @@ public class  bdconnecte {
 		return cl;
 		
 	}
+	public static int save(commande cmd) {
+		int cm=0;
+		try{
+			String sql="INSERT INTO commande (quantite, adresse, status, nomProduit, idClient, prixUnit) VALUES (?,?,?,?,?,?)";
+			Connection con =bdconnecte.connecte();
+			PreparedStatement stat;
+			stat=con.prepareStatement(sql);
+			stat.setFloat(1, cmd.getQuntite());
+			stat.setFloat(6, cmd.getPrixUnit());
+			stat.setString(2, cmd.getAdresse());
+			stat.setString(3, cmd.getStatus());
+			stat.setString(4, cmd.getNomProduit());
+			stat.setInt(5, cmd.getIdClient());
+			cm=stat.executeUpdate();
+			con.close();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return cm;
+		
+	}
+	 
+	
+	
 		
 }
 

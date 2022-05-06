@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controller_Chercher_commande">
+   <children>
+      <GridPane minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d9dee1;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.6000244140625" minWidth="10.0" prefWidth="13.000015068054196" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.6000244140625" minWidth="10.0" prefWidth="288.1999849319458" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.59999999999997" minWidth="10.0" prefWidth="298.3999877929687" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="210.60000915527343" minHeight="10.0" prefHeight="125.19999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="210.60000915527343" minHeight="10.0" prefHeight="27.800012207031244" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="483.19999618530267" minHeight="10.0" prefHeight="113.39997558593748" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="483.19999618530267" minHeight="0.0" prefHeight="23.00001220703126" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="335.4" minHeight="10.0" prefHeight="139.20004882812498" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="312.8000244140625" minHeight="10.0" prefHeight="103.99995117187501" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Line endX="255.2928924560547" endY="1.5989539623260498" startX="-100.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <Line endX="258.492919921875" endY="0.8000160455703735" startX="-100.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <Line endX="307.29290771484375" endY="1.3929115533828735" layoutX="131.0" layoutY="344.0" startX="657.7858276367188" startY="1.3929153680801392" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </GridPane.margin>
+            </Line>
+            <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+      <GridPane minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d9d5cb;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.6" minWidth="10.0" prefWidth="280.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.00003662109376" minWidth="10.0" prefWidth="216.80007324218752" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.4000244140625" minWidth="0.0" prefWidth="95.19992675781248" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="109.4" minHeight="10.0" prefHeight="91.99999313354492" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="184.79999313354492" minHeight="10.0" prefHeight="87.20000686645507" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="255.80002746582034" minHeight="10.0" prefHeight="61.999994659423834" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="309.8000030517578" minHeight="10.0" prefHeight="79.59998168945313" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="344.00002136230466" minHeight="10.0" prefHeight="35.600018310546886" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="344.00002136230466" minHeight="10.0" prefHeight="258.40000000000003" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Commande" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox prefHeight="26.0" prefWidth="276.0" promptText="Nom Produit" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Group GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </Group>
+            <Group GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="160.0" left="90.0" />
+               </GridPane.margin>
+            </Group>
+            <Label onMouseClicked="#Retour" prefHeight="20.0" prefWidth="149.0" text="Retour" textFill="#100ea9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox prefHeight="26.0" prefWidth="237.0" promptText="Statut :" GridPane.rowIndex="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <ComboBox prefHeight="26.0" prefWidth="237.0" promptText="Statut :" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <ComboBox prefHeight="26.0" prefWidth="237.0" promptText="Statut :" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+            <Label prefHeight="20.0" prefWidth="149.0" text="Chercher Commande" textFill="#100ea9" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Group GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#Chercher1" text="Chercher" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</HBox>

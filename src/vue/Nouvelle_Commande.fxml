@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
@@ -17,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<HBox alignment="CENTER" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller1">
+<HBox fx:id="hboxNvc" alignment="CENTER" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller1">
    <children>
       <GridPane minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d9dee1;">
          <columnConstraints>
@@ -35,37 +36,6 @@
             <RowConstraints maxHeight="312.8000244140625" minHeight="10.0" prefHeight="77.19998779296873" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <children>
-                  <Group layoutX="195.0" layoutY="160.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b9c1c9" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
-                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
-                     </children>
-                     <VBox.margin>
-                        <Insets bottom="2.0" right="10.0" />
-                     </VBox.margin>
-                  </Group>
-                  <Group layoutX="195.0" layoutY="128.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff591f" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
-                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
-                     </children>
-                     <VBox.margin>
-                        <Insets bottom="2.0" right="10.0" />
-                     </VBox.margin>
-                  </Group>
-                  <Group layoutX="215.0" layoutY="148.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff5f" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
-                        <Text layoutX="25.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
-                     </children>
-                     <VBox.margin>
-                        <Insets bottom="2.0" right="10.0" />
-                     </VBox.margin>
-                  </Group>
-               </children>
-            </VBox>
             <Line endX="255.2928924560547" endY="1.5989539623260498" startX="-100.0" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="20.0" />
@@ -81,71 +51,84 @@
                   <Insets bottom="50.0" left="20.0" />
                </GridPane.margin>
             </Line>
-            <VBox alignment="BOTTOM_RIGHT" layoutX="261.0" layoutY="10.0" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Pane fx:id="pane1" prefHeight="124.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane fx:id="pane3" prefHeight="158.0" prefWidth="338.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <Group layoutX="195.0" layoutY="160.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b9c2c9" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
-                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
                   <Group layoutX="195.0" layoutY="128.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff491f" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
-                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
                   <Group layoutX="215.0" layoutY="148.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1fff39" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
-                        <Text layoutX="25.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
                </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
             </VBox>
-            <VBox alignment="BOTTOM_RIGHT" layoutX="10.0" layoutY="10.0" minHeight="100.0" minWidth="202.0" prefHeight="600.0" prefWidth="600.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
                   <Group layoutX="195.0" layoutY="160.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#b5bdc4" height="25.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
-                        <Text layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
                   <Group layoutX="195.0" layoutY="128.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#ff4f21" height="25.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
-                        <Text layoutX="19.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annulée" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
                   <Group layoutX="215.0" layoutY="148.0">
-                     <children>
-                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#2cff1f" height="24.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
-                        <Text layoutX="25.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrée" />
-                     </children>
                      <VBox.margin>
                         <Insets bottom="2.0" right="10.0" />
                      </VBox.margin>
                   </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
                </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
             </VBox>
-            <Pane prefHeight="124.0" prefWidth="289.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Pane prefHeight="158.0" prefWidth="338.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <VBox alignment="BOTTOM_RIGHT" minHeight="100.0" minWidth="202.0" prefHeight="115.0" prefWidth="202.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <children>
+                  <Group layoutX="195.0" layoutY="160.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="195.0" layoutY="128.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Group layoutX="215.0" layoutY="148.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" />
+                     </VBox.margin>
+                  </Group>
+                  <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Modifier" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: Green;" text="Annulle" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Livree" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="20.0" />
+               </padding>
+            </VBox>
          </children>
       </GridPane>
       <GridPane minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d9d5cb;">
@@ -207,27 +190,22 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="207.0" layoutY="333.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets left="20.0" right="20.0" />
-               </GridPane.margin>
-            </Rectangle>
-            <TextField promptText="Prix Unit" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <TextField fx:id="prixUnit" prefHeight="26.0" prefWidth="62.0" promptText="Prix Unit" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
             </TextField>
-            <TextField promptText="Adresse" GridPane.rowIndex="7">
+            <TextField fx:id="adresse" promptText="Adresse" GridPane.rowIndex="7">
                <GridPane.margin>
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
             </TextField>
-            <TextField promptText="Quantité" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <TextField fx:id="quantite" promptText="Quantité" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
             </TextField>
-            <ComboBox prefHeight="26.0" prefWidth="276.0" promptText="Nom Produit" GridPane.rowIndex="6">
+            <ComboBox fx:id="nomProduit" onMouseClicked="#viewProduit" prefHeight="26.0" prefWidth="276.0" promptText="Nom Produit" GridPane.rowIndex="6">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -240,14 +218,14 @@
                   <Insets left="20.0" right="20.0" />
                </GridPane.margin>
                <children>
-                  <ComboBox prefHeight="26.0" prefWidth="237.0" promptText="Statut :">
+                  <ComboBox fx:id="statut" prefHeight="26.0" prefWidth="164.0" promptText="Statut :">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                   </ComboBox>
                </children>
             </Group>
-            <Group onMouseClicked="#insertData" GridPane.columnIndex="2" GridPane.rowIndex="8">
+            <Group fx:id="enrg" onMouseClicked="#insertData" GridPane.columnIndex="2" GridPane.rowIndex="8">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#085928" height="31.0" stroke="#f3f7f4" strokeType="INSIDE" width="132.0" />
                   <Text fill="#efeaea" layoutX="33.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enregistrer">
@@ -260,6 +238,14 @@
             <Group GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <RadioButton fx:id="rdbtnFemme" mnemonicParsing="false" text="F" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <RadioButton fx:id="rdbtnHomme" mnemonicParsing="false" text="H" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="retourHome" onMouseClicked="#home" text="Retour" textFill="#4027d6">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Cambria" size="22.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
    </children>

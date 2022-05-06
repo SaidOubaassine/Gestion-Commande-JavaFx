@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="BOTTOM_RIGHT" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #d9d5cb;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.6" minWidth="10.0" prefWidth="280.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.00003662109376" minWidth="10.0" prefWidth="94.00004069010419" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.4000244140625" minWidth="10.0" prefWidth="134.00004069010419" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.6666259765625" minWidth="0.0" prefWidth="234.6666259765625" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="54.79998474121094" minHeight="0.7999938964843736" prefHeight="54.79998474121094" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="116.00000610351562" minHeight="10.0" prefHeight="60.400015258789054" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="120.20000610351562" minHeight="10.0" prefHeight="55.59998016357423" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="139.19998779296876" minHeight="10.0" prefHeight="77.79999389648438" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="120.99997558593748" minHeight="10.0" prefHeight="63.39996337890625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="120.99997558593748" minHeight="10.0" prefHeight="66.19997558593752" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TextField promptText="0676784377" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField promptText="MALIKA OUADOUD" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField prefHeight="26.0" prefWidth="228.0" promptText="Malikaouadoud@gmail.com" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label alignment="CENTER" prefHeight="26.0" prefWidth="198.0" text="Modifier Client" textFill="#ff9933" GridPane.columnIndex="3">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="85.0" text="Client" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton mnemonicParsing="false" text="H" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <RadioButton mnemonicParsing="false" text="F" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #00cc44;" text="Enregistrer" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="10.0" right="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label prefHeight="17.0" prefWidth="85.0" text="Retour" textFill="#ff9933">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
